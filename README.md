@@ -16,7 +16,7 @@ This project consisted on building the front-end of an application that will hel
 
 ## Live Demo
 
-[pending](#)
+[https://calm-brushlands-30554.herokuapp.com/](https://calm-brushlands-30554.herokuapp.com/)
 
 
 ## Getting Started
