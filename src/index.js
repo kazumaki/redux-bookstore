@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './Components/App';
 import { createStore } from 'redux';
-import { Provider } from 'react-redux'
+import { Provider } from 'react-redux';
+import App from './components/App';
 import books from './reducers/books';
 
 const store = createStore(books);
