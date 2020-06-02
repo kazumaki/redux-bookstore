@@ -64,6 +64,11 @@ To deploy this project on heroku follow the next [instructions](https://github.c
 - Twitter: [@fivanunam](https://twitter.com/fivanunam)
 - Linkedin: [fivan](https://www.linkedin.com/in/fivan)
 
+👤 **Vinicius Campos Carvalho**
+
+- Github: [@kazumaki](https://github.com/kazumaki)
+- Twitter: [@iKazumaki](https://twitter.com/iKazumaki)
+- Linkedin: [vcamposcarvalho](https://www.linkedin.com/in/vcamposcarvalho)
 
 ## Contributing
 
