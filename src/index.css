@@ -156,3 +156,9 @@ button {
   background-color:#0290ff;
   color: white;
 }
+
+@media (max-width: 600px) {
+  .books-container{
+    padding: 0 20px;
+  }
+}
