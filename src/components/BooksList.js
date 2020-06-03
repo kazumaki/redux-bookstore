@@ -12,9 +12,9 @@ class BooksList extends React.Component {
     this.handleRemoveBook = this.handleRemoveBook.bind(this);
   }
 
-  handleRemoveBook(event) {
+  handleRemoveBook(event, book) {
     event.preventDefault();
-    this.props.submitRemoveBook(this.props.books.find(book => book.id == event.target.id));
+    this.props.submitRemoveBook(book);
   }
 
   render() {
@@ -30,7 +30,7 @@ class BooksList extends React.Component {
         </thead>
         <tbody>
           {
-            this.props.books.map(book => <Book key={book.id} book={book} handleRemoveBook={this.handleRemoveBook} />)
+            this.props.books.map(book => <Book key={book.id} book={book} handleRemoveBook={event => this.handleRemoveBook(event, book)} />)
           }
         </tbody>
       </table>
