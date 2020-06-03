@@ -14,10 +14,12 @@ class BooksList extends React.Component {
 
   handleRemoveBook(event, book) {
     event.preventDefault();
-    this.props.submitRemoveBook(book);
+    const { submitRemoveBook } = this.props;
+    submitRemoveBook(book);
   }
 
   render() {
+    const { books } = this.props;
     return (
       <table>
         <thead>
@@ -30,13 +32,21 @@ class BooksList extends React.Component {
         </thead>
         <tbody>
           {
-            this.props.books.map(book => <Book key={book.id} book={book} handleRemoveBook={event => this.handleRemoveBook(event, book)} />)
+            books
+              .map(book => (
+                <Book
+                  key={book.id}
+                  book={book}
+                  handleRemoveBook={event => this
+                    .handleRemoveBook(event, book)}
+                />
+              ))
           }
         </tbody>
       </table>
-    )
+    );
   }
-};
+}
 
 BooksList.propTypes = {
   books: PropTypes.arrayOf(
@@ -46,6 +56,7 @@ BooksList.propTypes = {
       category: PropTypes.string,
     }).isRequired,
   ).isRequired,
+  submitRemoveBook: PropTypes.func.isRequired,
 };
 
 const mapDispatchToProps = dispatch => (
