@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { createBook } from '../actions/index';
 
 const BOOK_CATEGORIES = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Politics', 'Sci-Fi', 'Self Improvement'];
@@ -25,7 +26,8 @@ class BooksForm extends React.Component {
 
   handleSubmit(element) {
     element.preventDefault();
-    const { title, category, submitNewBook } = this.state;
+    const { title, category } = this.state;
+    const { submitNewBook } = this.props;
     submitNewBook({
       title,
       category,
@@ -53,6 +55,10 @@ class BooksForm extends React.Component {
     );
   }
 }
+
+BooksForm.propTypes = {
+  submitNewBook: PropTypes.func.isRequired,
+};
 
 const mapDispatchToProps = dispatch => ({
   submitNewBook: book => {
