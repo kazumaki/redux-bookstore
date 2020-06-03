@@ -3,7 +3,7 @@ import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
 const initialState = [
   {
     title: 'The power of habit',
-    category: 'self improvement',
+    category: 'Self Improvement',
     id: Math.floor(Math.random() * 1000),
   },
   {
@@ -22,7 +22,7 @@ const initialState = [
     id: Math.floor(Math.random() * 1000),
   },
 ];
-const books = (state = initialState, action) => {
+const booksReducer = (state = initialState, action) => {
   switch (action.type) {
     case CREATE_BOOK:
       return [...state, action.book];
@@ -35,4 +35,4 @@ const books = (state = initialState, action) => {
   }
 };
 
-export default books;
+export default booksReducer;

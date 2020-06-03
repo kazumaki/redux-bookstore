@@ -1,10 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from './Book';
-import { removeBook } from '../actions';
-
-const mapStateToProps = state => ({ books: state });
 
 class BooksList extends React.Component {
   constructor(props) {
@@ -59,8 +55,4 @@ BooksList.propTypes = {
   submitRemoveBook: PropTypes.func.isRequired,
 };
 
-const mapDispatchToProps = dispatch => (
-  { submitRemoveBook: book => dispatch(removeBook(book)) }
-);
-
-export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
+export default BooksList;

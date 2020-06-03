@@ -4,9 +4,9 @@ import './index.css';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import App from './components/App';
-import books from './reducers/books';
+import rootReducer from './reducers/index';
 
-const store = createStore(books);
+const store = createStore(rootReducer);
 
 ReactDOM.render(
   <React.StrictMode>
