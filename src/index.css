@@ -127,3 +127,29 @@ tr {
 button {
   cursor: pointer;
 }
+
+.add-book-header {
+  color: grey;
+}
+
+.add-book-container {
+  border-top: 2px solid lightgrey;
+  padding: 10px;
+}
+
+.add-book-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-book-title {
+  width: 50%;
+}
+
+.add-book-button {
+  width: 20%;
+  border: none;
+  border-radius: 2px;
+  background-color:#0290ff;
+  color: white;
+}
