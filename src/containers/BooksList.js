@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Book from './Book';
+import Book from '../components/Book';
 
-const mapStateToProps = state => ({ books: state });
+const mapStateToProps = state => ({ books: state.books });
 
 const BooksList = ({ books }) => (
   <table>
