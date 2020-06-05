@@ -4,9 +4,32 @@ import './index.css';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import App from './components/App';
-import books from './reducers/books';
+import rootReducer from './reducers/index';
 
-const store = createStore(books);
+const initialBooks = [
+  {
+    title: 'The power of habit',
+    category: 'self improvement',
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    title: 'The prince',
+    category: 'Politics',
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    title: 'The everything store',
+    category: 'Biography',
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    title: "The Hitchhiker's Guide to the Galaxy",
+    category: 'Sci-Fi',
+    id: Math.floor(Math.random() * 1000),
+  },
+];
+
+const store = createStore(rootReducer, { books: initialBooks });
 
 ReactDOM.render(
   <React.StrictMode>
