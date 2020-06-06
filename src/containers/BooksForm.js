@@ -1,10 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-<<<<<<< HEAD:src/components/BooksForm.js
-import PropTypes from 'prop-types';
-=======
 import { PropTypes } from 'prop-types';
->>>>>>> development:src/containers/BooksForm.js
 import { createBook } from '../actions/index';
 
 const BOOK_CATEGORIES = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Politics', 'Sci-Fi', 'Self Improvement'];

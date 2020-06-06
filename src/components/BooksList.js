@@ -1,10 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Book from './Book';
-import { removeBook } from '../actions';
-import Book from '../components/Book';
-
-const mapStateToProps = state => ({ books: state.books });
 
 class BooksList extends React.Component {
   constructor(props) {
