@@ -1,7 +1,7 @@
 import React from 'react';
-import BooksForm from './BooksForm';
 import CategoryFilter from './CategoryFilter';
 import FilteredBooks from '../containers/FilteredBooks';
+import BooksForm from '../containers/BooksForm';
 
 const App = () => (
   <div>
