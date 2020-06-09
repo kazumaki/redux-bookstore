@@ -1,10 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-<<<<<<< HEAD:src/components/BooksForm.js
-import PropTypes from 'prop-types';
-=======
 import { PropTypes } from 'prop-types';
->>>>>>> development:src/containers/BooksForm.js
 import { createBook } from '../actions/index';
 
 const BOOK_CATEGORIES = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Politics', 'Sci-Fi', 'Self Improvement'];
@@ -30,13 +26,8 @@ class BooksForm extends React.Component {
 
   handleSubmit(element) {
     element.preventDefault();
-<<<<<<< HEAD:src/components/BooksForm.js
-    const { submitNewBook } = this.props;
-    const { title, category } = this.state;
-=======
     const { title, category } = this.state;
     const { submitNewBook } = this.props;
->>>>>>> development:src/containers/BooksForm.js
     submitNewBook({
       title,
       category,
