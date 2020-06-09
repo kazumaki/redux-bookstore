@@ -1,10 +1,12 @@
 import React from 'react';
-import BooksList from '../containers/BooksList';
+import CategoryFilter from './CategoryFilter';
+import FilteredBooks from '../containers/FilteredBooks';
 import BooksForm from '../containers/BooksForm';
 
 const App = () => (
   <div>
-    <BooksList />
+    <CategoryFilter />
+    <FilteredBooks />
     <BooksForm />
   </div>
 );
