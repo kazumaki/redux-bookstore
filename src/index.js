@@ -9,7 +9,7 @@ import rootReducer from './reducers/index';
 const initialBooks = [
   {
     title: 'The power of habit',
-    category: 'self improvement',
+    category: 'Self Improvement',
     id: Math.floor(Math.random() * 1000),
   },
   {
