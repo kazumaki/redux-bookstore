@@ -18,14 +18,6 @@ class BooksList extends React.Component {
     const { books } = this.props;
     return (
       <table>
-        <thead>
-          <tr>
-            <td>ID</td>
-            <td>Title</td>
-            <td>Category</td>
-            <td>Remove Book</td>
-          </tr>
-        </thead>
         <tbody>
           {
             books

@@ -17,7 +17,7 @@ class CategoryFilter extends React.Component {
   render() {
     const { filter } = this.props;
     return (
-      <select value={filter} onChange={this.handleFilterChange}>
+      <select className="select-generic" value={filter} onChange={this.handleFilterChange}>
         {FILTER_CATEGORIES.map(
           category => <option key={category} value={category}>{category}</option>,
         )}
